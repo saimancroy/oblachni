@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>WebGL BIT I 2013</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    
+    <script>
+    var emptyFunc = function(){};
+    
+    var slideFuncs = {current: {onIn: emptyFunc, onOut: emptyFunc}};
+    
+    function startDemo(frameId, src){
+      var f = document.getElementById(frameId);
+      f.src = src;
+      f.width = 500;
+      f.height = 500;
+      f.marginHeight = 0;
+      f.scrolling = 'no';
+    }
+    
+    function stopDemo(frameId){
+      document.getElementById(frameId).src = "";
+    }
+    
+    var slideIndex = 0;
+    
+    function incrementSlideIndex(){
+      slideIndex++;
+    }
+    </script>
+    
+  </head>
+
+  <body>
+    <div class="presentation">
+      <div class="slides">
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">          
+          <section class="center intro">
+            <hgroup>
+              <h1>Въведение в облачните технологии</h1>
+              <h2>Бизнес информационни технологии - 3 курс</h2>
+              
+              <p>Ивайло Котрабаков<br />1201561065</p>
+
+              <p>Даниел Драганов<br /> 1201561060 </p>          
+              
+                
+            </hgroup>
+            <p style="font-size: 16px">БИТ III 2015</p>
+          </section>
+        </div>
+
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Първа страница</header>
+          <section>
+            <ul>
+              <li>Много як текст за презентацията</li>
+            </ul>      
+          </section>
+        </div>
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Втора страница</header>
+          <section>
+            <ul>
+              <li>Друг як текст за презентацията</li>
+            </ul>      
+          </section>
+        </div>        
+
+
+    </div> <!-- end presentation -->
+    
+    <script src="slides.js"></script>
+  </body>
+</html>
+
