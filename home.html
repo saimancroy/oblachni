@@ -3,8 +3,14 @@
 <html>
 
   <head>
-    <meta charset="UTF-8">
-    <title>WebGL BIT I 2013</title>
+  <!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>    
+    <title>ВОТ БИТ III 2015</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
     
     <script>
@@ -43,14 +49,7 @@
         <div class="slide">          
           <section class="center intro">
             <hgroup>
-              <h1>Въведение в облачните технологии</h1>
-              <h2>Бизнес информационни технологии - 3 курс</h2>
-              
-              <p>Ивайло Котрабаков<br />1201561065</p>
-
-              <p>Даниел Драганов<br /> 1201561060 </p>          
-              
-                
+              <h1>Въведение в облачните технологии</h1>              
             </hgroup>
             <p style="font-size: 16px">БИТ III 2015</p>
           </section>
@@ -59,24 +58,110 @@
 
 
         <script>incrementSlideIndex();</script>
-        <div class="slide">
-          <header>Първа страница</header>
-          <section>
-            <ul>
-              <li>Много як текст за презентацията</li>
-            </ul>      
-          </section>
+        <div class="slide">                    
+            <section class="center intro">
+            <hgroup>
+              <header>Презентация на тема Heroku</header>              
+            </hgroup>            
+                <h2>Бизнес информационни технологии - 3 курс</h2>
+                <p>Ивайло Котрабаков<br />1201561065</p>
+                <p>Даниел Драганов<br /> 1201561060 </p>
+            </section>          
         </div>
 
         <script>incrementSlideIndex();</script>
         <div class="slide">
-          <header>Втора страница</header>
+          <header>Въведение</header>
           <section>
-            <ul>
-              <li>Друг як текст за презентацията</li>
-            </ul>      
+            <div class='col-md-4'>
+              <p>Heroku е облачна платформа (PaaS) която поддържа няколко езика за програмиране.
+                Тя е една от първите облачни технологии която се разработва от Юни 2007г. 
+                Операционната система която използват е Ubuntu.</p>            
+            </div>      
+            <div class='col-md-8'>
+            <img src="img/logo.jpg" height="250" width="500" >
+            </div>      
           </section>
         </div>        
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Getting Started</header>
+          <section>
+            <div class='col-md-4'>            
+              <p>Heroku предлага гайд, как да качим приложението ни, стъпка по стъпка за няколко минути.
+                Първо се инсталира toolbelt, за използваната от вас операционна система.</p>
+            </div>      
+            <div class='col-md-8'>
+            <img src="img/second.jpg" height="250" width="500" >
+            </div>      
+          </section>
+        </div>        
+
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Избиране на език</header>
+          <section>
+            <div class='col-md-4'>            
+              <p>Можем да изберем един от езиците за програмине предложени от Heroku.
+                За тази презентация ние ще изпозваме PHP. </p>            
+            </div>      
+            <div class='col-md-8'>
+            <img src="img/first.png" height="250" width="500" >
+            </div>      
+          </section>
+        </div>        
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Необходими програми</header>
+          <section>
+            <div class='col-md-4'>
+            <ul>
+              <p>За да ъплоаднем PHP проект, са нужни:</p>
+              <li><p>безплатен <a href="https://signup.heroku.com/www-header" target="_blank">Heroku акаунт</a></p></li>
+              <li><p>инсталиран <a href="https://php.net" target="_blank">PHP</a></p></li>
+              <li><p>инсталиран <a href="https://getcomposer.org/" target="_blank">Composer</a></p></li>
+            </ul>
+            </div>      
+            <div class='col-md-8'>
+            <img src="img/third.png" height="250" width="500" >
+            </div>      
+          </section>
+        </div>   
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Началото на края</header>
+          <section>
+            <div class='col-md-4'>
+              <p>След като сме инсталирали toolbelt, отравяме cmd/terminal и въвеждаме командата heroku login.
+                И въвеждаме email и паролата на акаунта ни в Heroku.</p>            
+            </div>      
+            <div class='col-md-8'>
+            <img src="img/fourth.png" height="250" width="500" >
+            </div>      
+          </section>
+        </div>             
+
+        <script>incrementSlideIndex();</script>
+        <div class="slide">
+          <header>Подготовка за качване</header>
+          <section>
+            <div class='col-md-4'>
+              <p>Проекта ни се намира на <a href="https://github.com/saimancroy/oblachni" target="_blank">Github.com</a>.
+                С командата </p>
+                <ul>
+                  <li>git clone "url"</li>
+                </ul>           
+                <p>копираме репозиторито и създаваме локално копие</p> 
+            </div>      
+            <div class='col-md-8'>
+            <img src="img/fourth.png" height="250" width="500" >
+            </div>      
+          </section>
+        </div>             
 
 
     </div> <!-- end presentation -->
